@@ -3,53 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Ивана Иванова</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Волонтерство в Казахстане</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f9ff;
+            color: #333;
+        }
+        header {
+            background-color: #2a7ae2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #2a7ae2;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #2a7ae2;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2a7ae2;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #1f5ecb;
+        }
+    </style>
 </head>
 <body>
-
-    <header class="header">
-        <h1 class="animate-on-scroll fade-in-up">Иван Иванов</h1>
-        <p class="animate-on-scroll fade-in-up delay-200">Веб-разработчик</p>
+    <header>
+        <h1>Волонтерство в Казахстане</h1>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#projects">Проекты</a>
+            <a href="#get-involved">Присоединиться</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="section animate-on-scroll fade-in-left">
-            <h2>Обо мне</h2>
-            <p>Я веб-разработчик с 5-летним опытом, специализирующийся на создании современных и интерактивных сайтов.</p>
+    <main>
+        <section id="about">
+            <h2>О волонтерстве в Казахстане</h2>
+            <p>
+                Волонтерство — это возможность помогать людям и обществу безвозмездно, развивая свои навыки и расширяя круг общения. В Казахстане волонтерское движение активно развивается, объединяя неравнодушных и инициативных людей для решения социальных, экологических и культурных задач.
+            </p>
         </section>
 
-        <section class="section animate-on-scroll fade-in-right">
-            <h2>Навыки</h2>
-            <ul class="skills">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>React.js</li>
-                <li>Node.js</li>
+        <section id="projects">
+            <h2>Наши проекты</h2>
+            <ul>
+                <li><strong>Экологические акции:</strong> уборка парков и озер, посадка деревьев.</li>
+                <li><strong>Социальная поддержка:</strong> помощь пожилым людям и детям в трудных ситуациях.</li>
+                <li><strong>Образовательные программы:</strong> обучение и наставничество для молодежи.</li>
             </ul>
         </section>
 
-        <section class="section animate-on-scroll fade-in-up">
-            <h2>Опыт работы</h2>
-            <div class="job-item">
-                <h3>Ведущий разработчик</h3>
-                <p class="company">ООО "Технологии будущего" | 2020 - по н.в.</p>
-            </div>
-            <div class="job-item">
-                <h3>Фронтенд-разработчик</h3>
-                <p class="company">АО "Инновационные решения" | 2018 - 2020</p>
-            </div>
+        <section id="get-involved">
+            <h2>Присоединяйтесь к нам!</h2>
+            <p>Если вы хотите стать волонтером и участвовать в наших проектах, оставьте заявку, и мы свяжемся с вами.</p>
+            <a href="mailto:volunteer@kz.org" class="btn">Связаться с нами</a>
         </section>
 
-        <section class="section">
-            <h2>Количество проектов</h2>
-            <div class="project-count">
-                <span id="counter" data-target="25">0</span>
-            </div>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Email: volunteer@kz.org</p>
+            <p>Телефон: +7 700 123 4567</p>
+            <p>Адрес: г. Нур-Султан, Казахстан</p>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        &copy; 2025 Волонтерство в Казахстане. Все права защищены.
+    </footer>
 </body>
 </html>
