@@ -177,22 +177,40 @@
 
         .benefits-container {
             display: flex;
-            gap: 40px;
-            justify-content: space-between;
             flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
         }
 
-        .benefits-container .column {
-            flex: 1;
+        .center-benefits {
+            flex: 1 1 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .center-benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .center-benefits li {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .side-benefits {
+            flex: 1 1 45%;
             min-width: 250px;
         }
 
-        .benefits-container ul {
+        .side-benefits ul {
             list-style-type: disc;
             padding-left: 20px;
         }
 
-        .benefits-container li {
+        .side-benefits li {
             margin-bottom: 15px;
             font-size: 1.05rem;
             line-height: 1.5;
@@ -201,7 +219,15 @@
         @media (max-width: 600px) {
             .benefits-container {
                 flex-direction: column;
-                gap: 20px;
+                align-items: stretch;
+            }
+
+            .center-benefits, .side-benefits {
+                flex: 1 1 100%;
+            }
+
+            .center-benefits ul {
+                text-align: left;
             }
         }
     </style>
@@ -213,21 +239,24 @@
             <a href="i1.html" class="active">Our Mission</a>
             <a href="i2.html">Events</a>
             <a href="i3.html">Get Involved</a>
-            <a href="i4.html">Contact</a>
         </nav>
     </header>
-    <!-- New Section: Volunteer Benefits -->
+
+    <!-- Volunteer Benefits Section -->
     <section class="benefits-section">
         <div class="overlay">
             <div class="benefits-container">
-                <div class="column">
+                <!-- Центр: Три основных преимущества -->
+                <div class="center-benefits">
                     <ul>
-                        <li><strong>Friendly Community:</strong> Connect with like-minded individuals and build lasting friendships.</li>
-                        <li><strong>Multi-industry Experience:</strong> Work on diverse projects and gain insight into various fields.</li>
-                        <li><strong>Stress Tolerance:</strong> Learn to adapt quickly and stay calm under pressure.</li>
+                        <li><strong>Friendly community and leadership development:</strong> Connect with like-minded individuals and build lasting friendships.</li>
+                        <li><strong>Projects on different topics, knowledge of different industries:</strong> Work on diverse projects and gain insight into various fields.</li>
+                        <li><strong>Stress tolerance – the ability to quickly adapt to different situations:</strong> Learn to adapt quickly and stay calm under pressure.</li>
                     </ul>
                 </div>
-                <div class="column">
+
+                <!-- Сбоку: Остальные преимущества -->
+                <div class="side-benefits">
                     <ul>
                         <li><strong>Responsibility:</strong> Develop a strong work ethic and complete tasks efficiently.</li>
                         <li><strong>Organizational Skills:</strong> Gain hands-on experience planning and leading events.</li>
