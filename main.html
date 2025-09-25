@@ -34,16 +34,25 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        .center-image {
-            text-align: center;
-            margin-bottom: 30px;
+        /* Контейнер с flex для картинки и текста */
+        .flex-container {
+            display: flex;
+            align-items: center; /* выровнять по вертикали */
+            gap: 30px; /* отступ между картинкой и текстом */
+            margin-bottom: 40px;
+            flex-wrap: wrap; /* на маленьких экранах перенос */
         }
-        .center-image img {
+        .flex-container img {
             width: 500px;
             height: 500px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             object-fit: cover;
-            display: inline-block;
+            border-radius: 15px; /* можно чуть скруглить углы */
+            flex-shrink: 0; /* чтобы не сжималась */
+        }
+        .text-block {
+            flex: 1; /* занимает всё оставшееся место */
+            min-width: 250px; /* минимум, чтобы не было слишком сжато */
         }
         h1, h2 {
             color: #2a7ae2;
@@ -85,38 +94,39 @@
     </header>
 
     <main>
-        <div class="center-image">
+        <div class="flex-container">
             <img src="m.jpg" alt="Волонтерство в Казахстане" />
+            <div class="text-block">
+                <section id="about">
+                    <h2>Voluntering community in Burabay</h2>
+                    <p>
+                        volunteer movement as a way to take care of our nature.
+                    </p>
+                </section>
+
+                <section id="projects">
+                    <h2>Наши проекты</h2>
+                    <ul>
+                        <li><strong>Экологические акции:</strong> уборка парков и озер, посадка деревьев.</li>
+                        <li><strong>Социальная поддержка:</strong> помощь пожилым людям и детям в трудных ситуациях.</li>
+                        <li><strong>Образовательные программы:</strong> обучение и наставничество для молодежи.</li>
+                    </ul>
+                </section>
+
+                <section id="get-involved">
+                    <h2>Присоединяйтесь к нам!</h2>
+                    <p>Если вы хотите стать волонтером и участвовать в наших проектах, оставьте заявку, и мы свяжемся с вами.</p>
+                    <a href="mailto:volunteer@kz.org" class="btn">Связаться с нами</a>
+                </section>
+
+                <section id="contacts">
+                    <h2>Контакты</h2>
+                    <p>Email: volunteer@kz.org</p>
+                    <p>Телефон: +7 700 123 4567</p>
+                    <p>Адрес: г. Нур-Султан, Казахстан</p>
+                </section>
+            </div>
         </div>
-
-        <section id="about">
-            <h2>Voluntering community in Burabay</h2>
-            <p>
-                volunteer movement as a way to take care of our nature.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Наши проекты</h2>
-            <ul>
-                <li><strong>Экологические акции:</strong> уборка парков и озер, посадка деревьев.</li>
-                <li><strong>Социальная поддержка:</strong> помощь пожилым людям и детям в трудных ситуациях.</li>
-                <li><strong>Образовательные программы:</strong> обучение и наставничество для молодежи.</li>
-            </ul>
-        </section>
-
-        <section id="get-involved">
-            <h2>Присоединяйтесь к нам!</h2>
-            <p>Если вы хотите стать волонтером и участвовать в наших проектах, оставьте заявку, и мы свяжемся с вами.</p>
-            <a href="mailto:volunteer@kz.org" class="btn">Связаться с нами</a>
-        </section>
-
-        <section id="contacts">
-            <h2>Контакты</h2>
-            <p>Email: volunteer@kz.org</p>
-            <p>Телефон: +7 700 123 4567</p>
-            <p>Адрес: г. Нур-Султан, Казахстан</p>
-        </section>
     </main>
 
     <footer>
