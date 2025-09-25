@@ -1,1 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Save Burabay - Our Mission</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #e8f0fe;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2a7ae2;
+            color: white;
+            padding: 25px 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #1f5ecb;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto 100px;
+            padding: 0 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(42, 122, 226, 0.2);
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 40px 20px 20px;
+        }
+
+        .flex-container img {
+            width: 450px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            flex-shrink: 0;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .flex-container img:hover {
+            transform: scale(1.03);
+        }
+
+        .text-block {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        h2 {
+            color: #2a7ae2;
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-left: 5px solid #2a7ae2;
+            padding-left: 12px;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            color: #34495e;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2a7ae2;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            box-shadow: 0 5px 12px rgba(42, 122, 226, 0.4);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1f5ecb;
+            box-shadow: 0 8px 18px rgba(31, 94, 203, 0.6);
+        }
+
+        footer {
+            background-color: #2a7ae2;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .flex-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="i1.html" class="active">Our Mission</a>
+            <a href="i2.html">Events</a>
+            <a href="i3.html">Get Involved</a>
+            <a href="i4.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex-container">
+            <img src="m.jpg" alt="Volunteering in Kazakhstan" />
+            <div class="text-block">
+                <section id="about">
+                    <h2>Our Mission</h2>
+                    <p>
+                        At Save Burabay, we are committed to preserving the natural beauty and ecological health of the Burabay region. Our volunteer community brings together passionate individuals who share a vision of sustainable development and environmental stewardship.
+                    </p>
+                </section>
+
+                <section id="projects">
+                    <h2>What We Do</h2>
+                    <ul>
+                        <li><strong>Environmental Initiatives:</strong> Organizing clean-ups of parks, lakes, and forests to reduce pollution and protect local biodiversity.</li>
+                        <li><strong>Community Outreach:</strong> Educating residents and visitors about the importance of conservation and responsible tourism.</li>
+                        <li><strong>Youth Engagement:</strong> Hosting workshops and mentorship programs to empower young people as future environmental leaders.</li>
+                    </ul>
+                </section>
+
+                <section id="get-involved">
+                    <h2>Join Our Efforts</h2>
+                    <p>
+                        Interested in making a difference? Whether you have a few hours or can commit long-term, your support helps our community thrive. Join us for upcoming events or contribute your skills in planning and outreach.
+                    </p>
+                    <a href="mailto:volunteer@kz.org" class="btn">Contact Us</a>
+                </section>
+
+                <section id="contacts">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email:</strong> volunteer@kz.org</p>
+                    <p><strong>Phone:</strong> +7 700 123 4567</p>
+                    <p><strong>Address:</strong> Nur-Sultan, Kazakhstan</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Save Burabay. All rights reserved.
+    </footer>
+</body>
+</html>
