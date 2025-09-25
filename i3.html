@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Save Burabay - Positions</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e8f0fe;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2a7ae2;
+      color: white;
+      padding: 25px 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #1f5ecb;
+    }
+
+    main {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      background: url('c.jpg') center center/cover no-repeat;
+      color: white;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Полупрозрачный затемнённый слой поверх картинки */
+    main::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      border-radius: 12px;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      font-size: 1.2rem;
+      background-color: rgba(42, 122, 226, 0.7);
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .content h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      border-left: 6px solid #fff;
+      padding-left: 12px;
+      font-size: 1.8rem;
+    }
+
+    .content ol {
+      padding-left: 20px;
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #2a7ae2;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 600px) {
+      main {
+        min-height: 500px;
+        padding: 10px;
+      }
+
+      .content {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="main.html">Home</a>
+      <a href="i1.html">Our Mission</a>
+      <a href="i2.html">Events</a>
+      <a href="i3.html" class="active">Get Involved</a>
+      <a href="i4.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h2>Our community offers a variety of interesting positions:</h2>
+      <ol>
+        <li>Event Manager</li>
+        <li>Social Media Manager</li>
+        <li>Group Leader (our team has many groups specializing in different industries)</li>
+        <li>Event Assistant</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Save Burabay. All rights reserved.
+  </footer>
+</body>
+</html>
