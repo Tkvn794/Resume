@@ -52,7 +52,7 @@
 
         main {
             max-width: 900px;
-            margin: 40px auto 100px;
+            margin: 40px auto 60px;
             padding: 0 20px;
             background: white;
             border-radius: 12px;
@@ -153,6 +153,57 @@
                 height: auto;
             }
         }
+
+        /* === New Benefits Section Styles === */
+        .benefits-section {
+            background-image: url('v.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 60px 20px;
+            margin: 60px auto;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            color: white;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.55);
+            padding: 40px 30px;
+            border-radius: 12px;
+        }
+
+        .benefits-container {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .benefits-container .column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .benefits-container ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .benefits-container li {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+            .benefits-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -194,6 +245,28 @@
             </div>
         </div>
     </main>
+
+    <!-- New Section: Volunteer Benefits -->
+    <section class="benefits-section">
+        <div class="overlay">
+            <div class="benefits-container">
+                <div class="column">
+                    <ul>
+                        <li><strong>Friendly Community:</strong> Connect with like-minded individuals and build lasting friendships.</li>
+                        <li><strong>Multi-industry Experience:</strong> Work on diverse projects and gain insight into various fields.</li>
+                        <li><strong>Stress Tolerance:</strong> Learn to adapt quickly and stay calm under pressure.</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><strong>Responsibility:</strong> Develop a strong work ethic and complete tasks efficiently.</li>
+                        <li><strong>Organizational Skills:</strong> Gain hands-on experience planning and leading events.</li>
+                        <li><strong>University Recognition:</strong> Your contribution is highly valued by Kazakhstani universities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         &copy; 2025 Save Burabay. All rights reserved.
