@@ -52,36 +52,36 @@
     main {
       position: relative;
       max-width: 900px;
+      height: 450px;
       margin: 40px auto 80px;
-      padding: 20px;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      background: url('c.jpg') center center/cover no-repeat;
-      color: white;
-      min-height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
-    /* Полупрозрачный затемнённый слой поверх картинки */
-    main::before {
-      content: "";
+    /* Фоновое изображение */
+    .background-image {
       position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
+      inset: 0; /* top:0; right:0; bottom:0; left:0 */
+      background: url('c.jpg') center center/cover no-repeat;
+      filter: brightness(0.5); /* затемняем для читаемости */
       z-index: 0;
-      border-radius: 12px;
     }
 
     .content {
       position: relative;
       z-index: 1;
+      color: white;
       max-width: 600px;
+      margin: auto;
+      padding: 30px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
       font-size: 1.2rem;
+      font-weight: 600;
       background-color: rgba(42, 122, 226, 0.7);
-      padding: 25px 30px;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
@@ -98,7 +98,6 @@
     .content ol {
       padding-left: 20px;
       margin: 0;
-      font-weight: 600;
       line-height: 1.6;
     }
 
@@ -117,8 +116,8 @@
 
     @media (max-width: 600px) {
       main {
+        height: auto;
         min-height: 500px;
-        padding: 10px;
       }
 
       .content {
@@ -141,6 +140,7 @@
   </header>
 
   <main>
+    <div class="background-image"></div>
     <div class="content">
       <h2>Our community offers a variety of interesting positions:</h2>
       <ol>
