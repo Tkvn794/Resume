@@ -53,7 +53,7 @@
       position: relative;
       max-width: 900px;
       height: 450px;
-      margin: 40px auto 80px;
+      margin: 40px auto 0;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -101,6 +101,28 @@
       line-height: 1.6;
     }
 
+    .extra-text {
+      max-width: 900px;
+      margin: 40px auto 80px; /* Отступ сверху и снизу */
+      background-color: rgba(42, 122, 226, 0.8);
+      color: white;
+      border-radius: 12px;
+      padding: 25px 40px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .extra-text h2 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.6rem;
+      border-left: 6px solid #fff;
+      padding-left: 15px;
+    }
+
     footer {
       background-color: #2a7ae2;
       color: white;
@@ -112,6 +134,7 @@
       font-weight: 600;
       font-size: 1rem;
       box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+      z-index: 1000;
     }
 
     @media (max-width: 600px) {
@@ -124,6 +147,17 @@
         max-width: 100%;
         font-size: 1rem;
         padding: 20px;
+      }
+
+      .extra-text {
+        padding: 20px;
+        font-size: 1rem;
+      }
+      
+      .extra-text h2 {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        border-left-width: 4px;
       }
     }
   </style>
@@ -147,17 +181,13 @@
         <li>Social Media Manager</li>
         <li>Group Leader (our team has many groups specializing in different industries)</li>
         <li>Event Assistant</li>
-        <h2>
-          
-          
-          There are many other exciting roles you can explore by joining our team. 
-          If you don't want to commit to a specific role, you can become a volunteer.
-          For more information, please call...</h2>
       </ol>
     </div>
   </main>
-  <h2>There are many other exciting roles you can explore by joining our team. If you don't want to commit to a specific role, you can become a volunteer. 
-For more information, please call...</h2>
+
+  <section class="extra-text">
+    <h2>There are many other exciting roles you can explore by joining our team. If you don't want to commit to a specific role, you can become a volunteer.<br>For more information, please call...</h2>
+  </section>
 
   <footer>
     &copy; 2025 Save Burabay. All rights reserved.
